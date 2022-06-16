@@ -1,5 +1,5 @@
 import { Fragment, useState } from 'react';
-import { QRCodeSVG } from 'qrcode.react';
+import { QRCodeCanvas } from 'qrcode.react';
 
 const Form = () => {
     const [url, setUrl] = useState("");
@@ -8,15 +8,16 @@ const Form = () => {
         <Fragment>
             <form className="form">
                 <label>
-                    URL:
+                    URL:&nbsp;
                     <input
                         type = "text"
                         value = {url}
+                        placeholder = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
                         onChange = {(e) => setUrl(e.target.value)}
                     />
                 </label>
             </form>
-        <QRCodeSVG value={url} className='qrcode'/>
+        <QRCodeCanvas value={url} className='qrcode' id='qrcode' size={256}/>
         </Fragment>
     )
 }
