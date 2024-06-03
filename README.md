@@ -1,5 +1,7 @@
 # QR-Code-Generator
 
+https://qr-code-generator-alpha-beryl.vercel.app/
+
 #### Video Demo: 
 https://www.youtube.com/watch?v=v_4n9UeMNYE
 
